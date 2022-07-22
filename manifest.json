@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Code Stalker Extension",
+  "version": "1.0.5",
+  "description": "Extension To Stalk Code",
+  "icons": {
+    "16": "icons/",
+    "48": "icons/",
+    "128": "icons/"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/",
+      "24": "icons/",
+      "32": "icons/"
+    },
+    "default_title": "Code Stalker",
+    "default_popup": "src/Browser/popup.html"
+  },
+  "options_page": "src/Option/options.html",
+  "permissions": ["storage", "notifications"],
+  "background": {
+    "service_worker": "src/BackGround/background.js"
+  }
+}
